@@ -1,0 +1,4 @@
+#Sat Jul 25 16:46:12 IST 2026
+base.0=/home/aju/WearCompass/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

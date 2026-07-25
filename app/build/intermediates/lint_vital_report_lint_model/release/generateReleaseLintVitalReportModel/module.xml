@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="/home/aju/WearCompass/app"
+    name=":app"
+    type="APP"
+    maven="WearCompass:app:"
+    agpVersion="8.3.1"
+    buildFolder="build"
+    bootClassPath="/home/aju/Android/Sdk/platforms/android-34/android.jar:/home/aju/Android/Sdk/build-tools/34.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-34">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

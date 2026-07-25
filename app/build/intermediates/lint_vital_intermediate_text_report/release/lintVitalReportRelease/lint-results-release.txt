@@ -1,0 +1,107 @@
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+/home/aju/WearCompass/app/src/main/java/com/example/wearcompass/MainActivity.kt:19: Error: Upgrade Fragment version to at least 1.3.0. [InvalidFragmentVersionForActivityResult from androidx.activity]
+    private val requestPermissionLauncher = registerForActivityResult(
+                                            ^
+
+   Explanation for issues of type "InvalidFragmentVersionForActivityResult":
+   In order to use the ActivityResult APIs you must upgrade your              
+     Fragment version to 1.3.0. Previous versions of FragmentActivity         
+          failed to call super.onRequestPermissionsResult() and used invalid
+   request codes
+
+   https://developer.android.com/training/permissions/requesting#make-the-request
+
+   Vendor: Android Open Source Project
+   Identifier: androidx.activity
+   Feedback: https://issuetracker.google.com/issues/new?component=527362
+
+31 errors, 0 warnings
