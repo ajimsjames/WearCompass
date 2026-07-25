@@ -1,6 +1,9 @@
 package com.example.wearcompass.presentation
 
+import android.content.Context
 import android.graphics.Paint
+import android.os.VibrationEffect
+import android.os.Vibrator
 import android.widget.Toast
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
@@ -16,7 +19,6 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
-import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.rotate
 import androidx.compose.ui.graphics.nativeCanvas
 import androidx.compose.ui.platform.LocalContext
@@ -29,6 +31,7 @@ import androidx.wear.compose.material.Text
 import com.example.wearcompass.location.Waypoint
 import com.example.wearcompass.location.WaypointLocationManager
 import com.example.wearcompass.sensor.CompassSensorManager
+import kotlin.math.abs
 import kotlin.math.cos
 import kotlin.math.sin
 
@@ -46,8 +49,25 @@ fun CompassScreen(
     var showSaveModal by remember { mutableStateOf(false) }
     var showWaypointListModal by remember { mutableStateOf(false) }
 
+    val vibrator = remember { context.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator }
+    var lastVibeTime by remember { mutableStateOf(0L) }
+
     val distAndBearing = remember(azimuth, currentLocation, activeWaypoint) {
         locationManager.getDistanceAndBearingToActiveWaypoint()
+    }
+
+    // Trigger haptic vibration when wrist points straight at target waypoint (within ±5°)
+    LaunchedEffect(azimuth, distAndBearing) {
+        distAndBearing?.let { (_, targetBearing) ->
+            val diff = abs((targetBearing - azimuth + 360) % 360)
+            if (diff < 5f || diff > 355f) {
+                val now = System.currentTimeMillis()
+                if (now - lastVibeTime > 2000) { // Limit pulse to once every 2 sec
+                    lastVibeTime = now
+                    vibrator.vibrate(VibrationEffect.createOneShot(40, VibrationEffect.DEFAULT_AMPLITUDE))
+                }
+            }
+        }
     }
 
     Box(
