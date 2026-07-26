@@ -52,129 +52,131 @@
 29-->[androidx.core:core:1.12.0] /home/aju/.gradle/caches/transforms-3/afb2f3308bef2898d66a923d88cf829d/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
 30
 31    <application
-31-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:14:5-35:19
+31-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:14:5-36:19
 32        android:allowBackup="true"
 32-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:15:9-35
 33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 33-->[androidx.core:core:1.12.0] /home/aju/.gradle/caches/transforms-3/afb2f3308bef2898d66a923d88cf829d/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 34        android:extractNativeLibs="false"
-35        android:icon="@android:drawable/ic_menu_compass"
-35-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:16:9-57
+35        android:icon="@drawable/ic_launcher"
+35-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:16:9-45
 36        android:label="@string/app_name"
-36-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:17:9-41
-37        android:supportsRtl="true"
-37-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:18:9-35
-38        android:theme="@style/Theme.WearCompass" >
-38-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:19:9-49
-39        <uses-library
-39-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:21:9-23:40
-40            android:name="com.google.android.wearable"
-40-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:22:13-55
-41            android:required="false" />
-41-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:23:13-37
-42
-43        <activity
-43-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:25:9-34:20
-44            android:name="com.example.wearcompass.MainActivity"
-44-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:26:13-41
-45            android:exported="true"
-45-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:27:13-36
-46            android:taskAffinity=""
+36-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:18:9-41
+37        android:roundIcon="@drawable/ic_launcher_round"
+37-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:17:9-56
+38        android:supportsRtl="true"
+38-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:19:9-35
+39        android:theme="@style/Theme.WearCompass" >
+39-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:20:9-49
+40        <uses-library
+40-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:22:9-24:40
+41            android:name="com.google.android.wearable"
+41-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:23:13-55
+42            android:required="false" />
+42-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:24:13-37
+43
+44        <activity
+44-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:26:9-35:20
+45            android:name="com.example.wearcompass.MainActivity"
+45-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:27:13-41
+46            android:exported="true"
 46-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:28:13-36
-47            android:theme="@style/Theme.WearCompass" >
-47-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:29:13-53
-48            <intent-filter>
-48-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:30:13-33:29
-49                <action android:name="android.intent.action.MAIN" />
-49-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:31:17-69
-49-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:31:25-66
-50
-51                <category android:name="android.intent.category.LAUNCHER" />
-51-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:32:17-77
-51-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:32:27-74
-52            </intent-filter>
-53        </activity>
-54        <activity
-54-->[com.google.android.gms:play-services-base:18.0.1] /home/aju/.gradle/caches/transforms-3/ff54285b279cf9fc71d5d11a66acff7b/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-55            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-55-->[com.google.android.gms:play-services-base:18.0.1] /home/aju/.gradle/caches/transforms-3/ff54285b279cf9fc71d5d11a66acff7b/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-56            android:exported="false"
-56-->[com.google.android.gms:play-services-base:18.0.1] /home/aju/.gradle/caches/transforms-3/ff54285b279cf9fc71d5d11a66acff7b/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-57            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-57-->[com.google.android.gms:play-services-base:18.0.1] /home/aju/.gradle/caches/transforms-3/ff54285b279cf9fc71d5d11a66acff7b/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-58
-59        <meta-data
-59-->[com.google.android.gms:play-services-basement:18.0.0] /home/aju/.gradle/caches/transforms-3/525c6dbeed1d93ee44606cfda785e820/transformed/play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
-60            android:name="com.google.android.gms.version"
-60-->[com.google.android.gms:play-services-basement:18.0.0] /home/aju/.gradle/caches/transforms-3/525c6dbeed1d93ee44606cfda785e820/transformed/play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
-61            android:value="@integer/google_play_services_version" />
-61-->[com.google.android.gms:play-services-basement:18.0.0] /home/aju/.gradle/caches/transforms-3/525c6dbeed1d93ee44606cfda785e820/transformed/play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
-62
-63        <provider
-63-->[androidx.emoji2:emoji2:1.3.0] /home/aju/.gradle/caches/transforms-3/b47df7ee14a506ea5dd0e387f5966e29/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
-64            android:name="androidx.startup.InitializationProvider"
-64-->[androidx.emoji2:emoji2:1.3.0] /home/aju/.gradle/caches/transforms-3/b47df7ee14a506ea5dd0e387f5966e29/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
-65            android:authorities="com.example.wearcompass.androidx-startup"
-65-->[androidx.emoji2:emoji2:1.3.0] /home/aju/.gradle/caches/transforms-3/b47df7ee14a506ea5dd0e387f5966e29/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
-66            android:exported="false" >
-66-->[androidx.emoji2:emoji2:1.3.0] /home/aju/.gradle/caches/transforms-3/b47df7ee14a506ea5dd0e387f5966e29/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
-67            <meta-data
-67-->[androidx.emoji2:emoji2:1.3.0] /home/aju/.gradle/caches/transforms-3/b47df7ee14a506ea5dd0e387f5966e29/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
-68                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-68-->[androidx.emoji2:emoji2:1.3.0] /home/aju/.gradle/caches/transforms-3/b47df7ee14a506ea5dd0e387f5966e29/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
-69                android:value="androidx.startup" />
-69-->[androidx.emoji2:emoji2:1.3.0] /home/aju/.gradle/caches/transforms-3/b47df7ee14a506ea5dd0e387f5966e29/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
-70            <meta-data
-70-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/aju/.gradle/caches/transforms-3/687c7b9bed8d5a598fe55456677430b7/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
-71                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-71-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/aju/.gradle/caches/transforms-3/687c7b9bed8d5a598fe55456677430b7/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
-72                android:value="androidx.startup" />
-72-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/aju/.gradle/caches/transforms-3/687c7b9bed8d5a598fe55456677430b7/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
-73            <meta-data
-73-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-74                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-74-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
-75                android:value="androidx.startup" />
-75-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-76        </provider>
-77
-78        <receiver
-78-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-79            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-79-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-80            android:directBootAware="false"
-80-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-81            android:enabled="true"
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-82            android:exported="true"
-82-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-83            android:permission="android.permission.DUMP" >
-83-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-84            <intent-filter>
-84-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-85                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-85-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-85-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-86            </intent-filter>
-87            <intent-filter>
-87-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-88                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-89            </intent-filter>
-90            <intent-filter>
-90-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-91                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-91-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-91-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
-92            </intent-filter>
-93            <intent-filter>
-93-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-94                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-94-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-94-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
-95            </intent-filter>
-96        </receiver>
-97    </application>
-98
-99</manifest>
+47            android:taskAffinity=""
+47-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:29:13-36
+48            android:theme="@style/Theme.WearCompass" >
+48-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:30:13-53
+49            <intent-filter>
+49-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:31:13-34:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:32:17-69
+50-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:32:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:33:17-77
+52-->/home/aju/WearCompass/app/src/main/AndroidManifest.xml:33:27-74
+53            </intent-filter>
+54        </activity>
+55        <activity
+55-->[com.google.android.gms:play-services-base:18.0.1] /home/aju/.gradle/caches/transforms-3/ff54285b279cf9fc71d5d11a66acff7b/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+56            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+56-->[com.google.android.gms:play-services-base:18.0.1] /home/aju/.gradle/caches/transforms-3/ff54285b279cf9fc71d5d11a66acff7b/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+57            android:exported="false"
+57-->[com.google.android.gms:play-services-base:18.0.1] /home/aju/.gradle/caches/transforms-3/ff54285b279cf9fc71d5d11a66acff7b/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+58            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+58-->[com.google.android.gms:play-services-base:18.0.1] /home/aju/.gradle/caches/transforms-3/ff54285b279cf9fc71d5d11a66acff7b/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+59
+60        <meta-data
+60-->[com.google.android.gms:play-services-basement:18.0.0] /home/aju/.gradle/caches/transforms-3/525c6dbeed1d93ee44606cfda785e820/transformed/play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+61            android:name="com.google.android.gms.version"
+61-->[com.google.android.gms:play-services-basement:18.0.0] /home/aju/.gradle/caches/transforms-3/525c6dbeed1d93ee44606cfda785e820/transformed/play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+62            android:value="@integer/google_play_services_version" />
+62-->[com.google.android.gms:play-services-basement:18.0.0] /home/aju/.gradle/caches/transforms-3/525c6dbeed1d93ee44606cfda785e820/transformed/play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+63
+64        <provider
+64-->[androidx.emoji2:emoji2:1.3.0] /home/aju/.gradle/caches/transforms-3/b47df7ee14a506ea5dd0e387f5966e29/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+65            android:name="androidx.startup.InitializationProvider"
+65-->[androidx.emoji2:emoji2:1.3.0] /home/aju/.gradle/caches/transforms-3/b47df7ee14a506ea5dd0e387f5966e29/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+66            android:authorities="com.example.wearcompass.androidx-startup"
+66-->[androidx.emoji2:emoji2:1.3.0] /home/aju/.gradle/caches/transforms-3/b47df7ee14a506ea5dd0e387f5966e29/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+67            android:exported="false" >
+67-->[androidx.emoji2:emoji2:1.3.0] /home/aju/.gradle/caches/transforms-3/b47df7ee14a506ea5dd0e387f5966e29/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+68            <meta-data
+68-->[androidx.emoji2:emoji2:1.3.0] /home/aju/.gradle/caches/transforms-3/b47df7ee14a506ea5dd0e387f5966e29/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+69-->[androidx.emoji2:emoji2:1.3.0] /home/aju/.gradle/caches/transforms-3/b47df7ee14a506ea5dd0e387f5966e29/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+70                android:value="androidx.startup" />
+70-->[androidx.emoji2:emoji2:1.3.0] /home/aju/.gradle/caches/transforms-3/b47df7ee14a506ea5dd0e387f5966e29/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+71            <meta-data
+71-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/aju/.gradle/caches/transforms-3/687c7b9bed8d5a598fe55456677430b7/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+72                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+72-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/aju/.gradle/caches/transforms-3/687c7b9bed8d5a598fe55456677430b7/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+73                android:value="androidx.startup" />
+73-->[androidx.lifecycle:lifecycle-process:2.7.0] /home/aju/.gradle/caches/transforms-3/687c7b9bed8d5a598fe55456677430b7/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+74            <meta-data
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+75                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+76                android:value="androidx.startup" />
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+77        </provider>
+78
+79        <receiver
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+80            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+81            android:directBootAware="false"
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+82            android:enabled="true"
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+83            android:exported="true"
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+84            android:permission="android.permission.DUMP" >
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+85            <intent-filter>
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+86                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+87            </intent-filter>
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+89                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+90            </intent-filter>
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+92                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+93            </intent-filter>
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+95                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/aju/.gradle/caches/transforms-3/40dbe72e88f887ca495bcf29b7ebec0a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+96            </intent-filter>
+97        </receiver>
+98    </application>
+99
+100</manifest>

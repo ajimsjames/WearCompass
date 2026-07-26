@@ -11,6 +11,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -25,6 +26,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.wear.compose.foundation.CurvedLayout
+import androidx.wear.compose.foundation.curvedComposable
 import androidx.wear.compose.material.Button
 import androidx.wear.compose.material.ButtonDefaults
 import androidx.wear.compose.material.Text
@@ -48,6 +51,7 @@ fun CompassScreen(
 
     var showSaveModal by remember { mutableStateOf(false) }
     var showWaypointListModal by remember { mutableStateOf(false) }
+    var showAboutModal by remember { mutableStateOf(false) }
 
     val vibrator = remember { context.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator }
     var lastVibeTime by remember { mutableStateOf(0L) }
@@ -62,7 +66,7 @@ fun CompassScreen(
             val diff = abs((targetBearing - azimuth + 360) % 360)
             if (diff < 5f || diff > 355f) {
                 val now = System.currentTimeMillis()
-                if (now - lastVibeTime > 2000) { // Limit pulse to once every 2 sec
+                if (now - lastVibeTime > 2000) {
                     lastVibeTime = now
                     vibrator.vibrate(VibrationEffect.createOneShot(40, VibrationEffect.DEFAULT_AMPLITUDE))
                 }
@@ -91,7 +95,6 @@ fun CompassScreen(
 
             // Inner compass ring rotating opposite to azimuth
             rotate(-azimuth, pivot = center) {
-                // Draw 360 Degree Ticks & Labels
                 for (deg in 0 until 360 step 15) {
                     val angleRad = Math.toRadians(deg.toDouble() - 90)
                     val isMajor = deg % 30 == 0
@@ -110,7 +113,6 @@ fun CompassScreen(
                     )
                 }
 
-                // Draw Cardinal Text Labels (N, E, S, W)
                 val cardinals = listOf("N" to 0, "E" to 90, "S" to 180, "W" to 270)
                 val paint = Paint().apply {
                     color = android.graphics.Color.WHITE
@@ -131,7 +133,7 @@ fun CompassScreen(
                 }
             }
 
-            // Top Fixed Indicator Pointer (North Reference)
+            // Top Fixed Indicator Pointer
             val pointerPath = Path().apply {
                 moveTo(center.x, center.y - radius + 4.dp.toPx())
                 lineTo(center.x - 8.dp.toPx(), center.y - radius - 10.dp.toPx())
@@ -151,7 +153,7 @@ fun CompassScreen(
                         lineTo(center.x + 10.dp.toPx(), center.y - radius + 40.dp.toPx())
                         close()
                     }
-                    drawPath(arrowPath, Color(0xFF00E676)) // Glowing Green Target Arrow
+                    drawPath(arrowPath, Color(0xFF00E676))
                 }
             }
         }
@@ -194,7 +196,7 @@ fun CompassScreen(
             }
         }
 
-        // Bottom Controls Bar (Save Spot, Select Waypoint)
+        // Bottom Controls Bar
         Row(
             modifier = Modifier
                 .align(Alignment.BottomCenter)
@@ -203,11 +205,10 @@ fun CompassScreen(
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            // Save Current Location Button
             Box(
                 modifier = Modifier
                     .clip(RoundedCornerShape(12.dp))
-                    .background(Color(0xFF1565C0))
+                    .background(Color(0xFF7B1FA2))
                     .clickable {
                         if (currentLocation != null) {
                             showSaveModal = true
@@ -220,7 +221,6 @@ fun CompassScreen(
                 Text("📍 Save", color = Color.White, fontSize = 11.sp, fontWeight = FontWeight.Bold)
             }
 
-            // Waypoints List Button
             Box(
                 modifier = Modifier
                     .clip(RoundedCornerShape(12.dp))
@@ -232,7 +232,23 @@ fun CompassScreen(
             }
         }
 
-        // Modal: Save Spot Presets
+        // Curved Bezel Top Navigation Bar
+        CurvedLayout(
+            anchor = 270f,
+            modifier = Modifier.fillMaxSize()
+        ) {
+            curvedComposable {
+                BezelPill("🧭 Compass", selected = true) { }
+            }
+            curvedComposable {
+                Spacer(modifier = Modifier.width(4.dp))
+            }
+            curvedComposable {
+                BezelPill("⚙️ About", selected = false) { showAboutModal = true }
+            }
+        }
+
+        // Save Spot Modal
         if (showSaveModal) {
             Box(
                 modifier = Modifier
@@ -251,7 +267,7 @@ fun CompassScreen(
                 ) {
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
                         Text(
-                            text = "Save Current Waypoint",
+                            text = "Save Waypoint",
                             color = Color.White,
                             fontSize = 13.sp,
                             fontWeight = FontWeight.Bold,
@@ -284,7 +300,7 @@ fun CompassScreen(
             }
         }
 
-        // Modal: Waypoints Manager
+        // Waypoints Manager Modal
         if (showWaypointListModal) {
             Box(
                 modifier = Modifier
@@ -313,7 +329,7 @@ fun CompassScreen(
 
                         if (waypoints.isEmpty()) {
                             Text(
-                                text = "No waypoints saved yet.\nTap '📍 Save' on main screen.",
+                                text = "No waypoints saved yet.",
                                 color = Color.Gray,
                                 fontSize = 10.sp,
                                 modifier = Modifier.padding(vertical = 20.dp)
@@ -331,7 +347,7 @@ fun CompassScreen(
                                             .fillMaxWidth()
                                             .padding(vertical = 2.dp)
                                             .clip(RoundedCornerShape(10.dp))
-                                            .background(if (isSelected) Color(0xFF1565C0) else Color(0xFF2C2C2E))
+                                            .background(if (isSelected) Color(0xFF7B1FA2) else Color(0xFF2C2C2E))
                                             .clickable {
                                                 locationManager.selectWaypoint(wp)
                                                 showWaypointListModal = false
@@ -374,6 +390,89 @@ fun CompassScreen(
                 }
             }
         }
+
+        // About App Modal
+        if (showAboutModal) {
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .background(Color(0xF0000000))
+                    .padding(14.dp),
+                contentAlignment = Alignment.Center
+            ) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .clip(RoundedCornerShape(16.dp))
+                        .background(Color(0xFF1C1C1E))
+                        .padding(12.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Text("⚙️ About App", color = Color(0xFFAB47BC), fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                        Box(
+                            modifier = Modifier
+                                .size(22.dp)
+                                .clip(CircleShape)
+                                .background(Color(0xFF333336))
+                                .clickable { showAboutModal = false },
+                            contentAlignment = Alignment.Center
+                        ) {
+                            Text("✕", color = Color.White, fontSize = 11.sp, fontWeight = FontWeight.Bold)
+                        }
+                    }
+
+                    Spacer(modifier = Modifier.height(8.dp))
+
+                    LazyColumn(
+                        modifier = Modifier.weight(1f),
+                        horizontalAlignment = Alignment.CenterHorizontally
+                    ) {
+                        item {
+                            Text("🧭 Wear Compass v1.1.0", color = Color.White, fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                            Text("By Aju George", color = Color.Gray, fontSize = 10.sp, modifier = Modifier.padding(bottom = 6.dp))
+                        }
+                        item {
+                            Column(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .clip(RoundedCornerShape(10.dp))
+                                    .background(Color(0xFF2C2C2E))
+                                    .padding(8.dp),
+                                horizontalAlignment = Alignment.CenterHorizontally
+                            ) {
+                                Text("• 360° Circular Azimuth Needle", color = Color.LightGray, fontSize = 9.sp)
+                                Text("• Target Waypoint Haptic Alignment", color = Color.LightGray, fontSize = 9.sp)
+                                Text("• Magnetic Declination Correction", color = Color.LightGray, fontSize = 9.sp)
+                                Text("• Target: Samsung Galaxy Watch 6", color = Color(0xFFAB47BC), fontSize = 9.sp, fontWeight = FontWeight.Bold)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun BezelPill(text: String, selected: Boolean, onClick: () -> Unit) {
+    Box(
+        modifier = Modifier
+            .clip(RoundedCornerShape(8.dp))
+            .background(if (selected) Color(0xFF7B1FA2) else Color(0xFF2C2C2E))
+            .clickable { onClick() }
+            .padding(horizontal = 6.dp, vertical = 2.dp)
+    ) {
+        Text(
+            text = text,
+            color = if (selected) Color.White else Color.Gray,
+            fontSize = 8.sp,
+            fontWeight = FontWeight.Bold
+        )
     }
 }
 
