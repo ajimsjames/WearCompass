@@ -82,8 +82,8 @@ fun CompassScreen(
     ) {
         // Main Circular Compass Canvas
         Canvas(modifier = Modifier.fillMaxSize()) {
-            val center = Offset(size.width / 2f, size.height / 2f)
-            val radius = (size.width / 2f) - 16.dp.toPx()
+            val center = Offset(size.width / 2f, size.height / 2f + 6.dp.toPx())
+            val radius = (size.width / 2f) - 22.dp.toPx()
 
             // Outer ring
             drawCircle(

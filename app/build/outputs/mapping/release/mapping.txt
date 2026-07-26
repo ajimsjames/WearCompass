@@ -3,8 +3,8 @@
 # min_api: 30
 # common_typos_disable
 # {"id":"com.android.tools.r8.mapping","version":"2.2"}
-# pg_map_id: f6d9d26
-# pg_map_hash: SHA-256 f6d9d26ffe051eaf65c25a919a3a1ff87beafa78a74fd4940d3987534696e74f
+# pg_map_id: 37f71fb
+# pg_map_hash: SHA-256 37f71fb42831370d5c960708e442ce07df9a8ac93bad0e60346bde9c76aa9f58
 _COROUTINE.ArtificialStackFrames -> a.a:
 # {"id":"sourceFile","fileName":"CoroutineDebugging.kt"}
     int $r8$classId -> a
@@ -112339,11 +112339,11 @@ com.example.wearcompass.presentation.CompassScreenKt$CompassScreen$2$1$1 -> com.
     52:52:androidx.compose.ui.graphics.drawscope.CanvasDrawScope$DrawParams androidx.compose.ui.graphics.drawscope.CanvasDrawScope.getDrawParams() -> invoke
     52:52:void androidx.compose.ui.graphics.drawscope.CanvasDrawScope$drawContext$1.setSize-uvyYCjk(long):71 -> invoke
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    52:52:void invoke(androidx.compose.ui.graphics.drawscope.DrawScope):511 -> invoke
+    52:52:void invoke(androidx.compose.ui.graphics.drawscope.DrawScope):512 -> invoke
     53:53:void androidx.compose.ui.graphics.drawscope.CanvasDrawScope$DrawParams.setSize-uvyYCjk(long):724:724 -> invoke
     53:53:void androidx.compose.ui.graphics.drawscope.CanvasDrawScope$drawContext$1.setSize-uvyYCjk(long):71 -> invoke
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    53:53:void invoke(androidx.compose.ui.graphics.drawscope.DrawScope):511 -> invoke
+    53:53:void invoke(androidx.compose.ui.graphics.drawscope.DrawScope):512 -> invoke
     54:55:void invoke(androidx.compose.ui.graphics.drawscope.DrawScope):137:138 -> invoke
     56:56:void androidx.compose.ui.graphics.AndroidPath.moveTo(float,float):69:69 -> invoke
     56:56:void invoke(androidx.compose.ui.graphics.drawscope.DrawScope):138 -> invoke
@@ -112387,11 +112387,11 @@ com.example.wearcompass.presentation.CompassScreenKt$CompassScreen$2$1$1 -> com.
     82:82:androidx.compose.ui.graphics.drawscope.CanvasDrawScope$DrawParams androidx.compose.ui.graphics.drawscope.CanvasDrawScope.getDrawParams():52:52 -> invoke
     82:82:void androidx.compose.ui.graphics.drawscope.CanvasDrawScope$drawContext$1.setSize-uvyYCjk(long):71 -> invoke
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    82:82:void invoke(androidx.compose.ui.graphics.drawscope.DrawScope):531 -> invoke
+    82:82:void invoke(androidx.compose.ui.graphics.drawscope.DrawScope):532 -> invoke
     83:83:void androidx.compose.ui.graphics.drawscope.CanvasDrawScope$DrawParams.setSize-uvyYCjk(long):724:724 -> invoke
     83:83:void androidx.compose.ui.graphics.drawscope.CanvasDrawScope$drawContext$1.setSize-uvyYCjk(long):71 -> invoke
       # {"id":"com.android.tools.r8.rewriteFrame","conditions":["throws(Ljava/lang/NullPointerException;)"],"actions":["removeInnerFrames(1)"]}
-    83:83:void invoke(androidx.compose.ui.graphics.drawscope.DrawScope):531 -> invoke
+    83:83:void invoke(androidx.compose.ui.graphics.drawscope.DrawScope):532 -> invoke
     84:84:java.lang.Object invoke(java.lang.Object) -> invoke
 com.example.wearcompass.presentation.CompassScreenKt$CompassScreen$2$3$1 -> com.example.wearcompass.presentation.CompassScreenKt$CompassScreen$2$3$1:
 # {"id":"sourceFile","fileName":"CompassScreen.kt"}
