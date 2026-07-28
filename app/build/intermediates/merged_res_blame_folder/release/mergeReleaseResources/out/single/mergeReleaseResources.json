@@ -1,7 +1,15 @@
 [
     {
+        "merged": "/home/aju/.gradle/daemon/8.4/com.ajimsjames.wearcompass.app-release-53:/drawable_ic_launcher_round.xml.flat",
+        "source": "/home/aju/.gradle/daemon/8.4/com.ajimsjames.wearcompass.app-main-54:/drawable/ic_launcher_round.xml"
+    },
+    {
         "merged": "com.ajimsjames.wearcompass.app-release-53:/drawable_ic_launcher_round.xml.flat",
         "source": "com.ajimsjames.wearcompass.app-main-54:/drawable/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/aju/.gradle/daemon/8.4/com.ajimsjames.wearcompass.app-release-53:/drawable_ic_launcher.xml.flat",
+        "source": "/home/aju/.gradle/daemon/8.4/com.ajimsjames.wearcompass.app-main-54:/drawable/ic_launcher.xml"
     },
     {
         "merged": "com.ajimsjames.wearcompass.app-release-53:/drawable_ic_launcher.xml.flat",
