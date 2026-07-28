@@ -98,7 +98,7 @@
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 -keep class androidx.profileinstaller.ProfileInstallReceiver { <init>(); }
 -keep class androidx.startup.InitializationProvider { <init>(); }
--keep class com.example.wearcompass.MainActivity { <init>(); }
+-keep class com.ajimsjames.wearcompass.MainActivity { <init>(); }
 -keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
 
 # End of content from /home/aju/WearCompass/app/build/intermediates/aapt_proguard_file/release/processReleaseResources/aapt_rules.txt

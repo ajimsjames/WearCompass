@@ -4,15 +4,15 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.example.wearcompass",
+  "applicationId": "com.ajimsjames.wearcompass",
   "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 4,
-      "versionName": "1.3.0",
+      "versionCode": 5,
+      "versionName": "2.0.0",
       "outputFile": "app-release.apk"
     }
   ],

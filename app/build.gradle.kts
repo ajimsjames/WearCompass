@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    namespace = "com.example.wearcompass"
+    namespace = "com.ajimsjames.wearcompass"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.wearcompass"
+        applicationId = "com.ajimsjames.wearcompass"
         minSdk = 30
         targetSdk = 33
-        versionCode = 4
-        versionName = "1.3.0"
+        versionCode = 5
+        versionName = "2.0.0"
 
         vectorDrawables {
             useSupportLibrary = true

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.wearcompass.app-mergeReleaseResources-51:/values-nl/values-nl.xml",
+            "outputFile": "com.ajimsjames.wearcompass.app-mergeReleaseResources-51:/values-nl/values-nl.xml",
             "map": [
                 {
                     "source": "/home/aju/.gradle/caches/transforms-3/525c6dbeed1d93ee44606cfda785e820/transformed/play-services-basement-18.0.0/res/values-nl/values.xml",

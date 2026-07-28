@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.wearcompass.app-mergeReleaseResources-51:/values-am/values-am.xml",
+            "outputFile": "com.ajimsjames.wearcompass.app-mergeReleaseResources-51:/values-am/values-am.xml",
             "map": [
                 {
                     "source": "/home/aju/.gradle/caches/transforms-3/819fd67e791729965b553b1042d5f994/transformed/ui-release/res/values-am/values-am.xml",

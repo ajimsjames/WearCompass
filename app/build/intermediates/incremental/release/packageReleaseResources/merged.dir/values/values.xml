@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wear Compass</string>
+    <string name="author_credit">Developed by Aju George</string>
+    <style name="Theme.WearCompass" parent="android:Theme.DeviceDefault">
+        <item name="android:windowSwipeToDismiss">true</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+</resources>
