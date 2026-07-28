@@ -11,7 +11,7 @@
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 7,
+      "versionCode": 3,
       "versionName": "2.2.0",
       "outputFile": "resources-release.ap_"
     }
