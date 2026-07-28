@@ -200,8 +200,8 @@ fun CompassScreen(
         Row(
             modifier = Modifier
                 .align(Alignment.BottomCenter)
-                .padding(bottom = 12.dp)
-                .fillMaxWidth(0.85f),
+                .padding(bottom = 26.dp)
+                .fillMaxWidth(0.75f),
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
         ) {
@@ -218,7 +218,7 @@ fun CompassScreen(
                     }
                     .padding(horizontal = 10.dp, vertical = 6.dp)
             ) {
-                Text("📍 Save", color = Color.White, fontSize = 11.sp, fontWeight = FontWeight.Bold)
+                Text("📍 Save", color = Color.White, fontSize = 10.sp, fontWeight = FontWeight.Bold)
             }
 
             Box(
@@ -228,7 +228,7 @@ fun CompassScreen(
                     .clickable { showWaypointListModal = true }
                     .padding(horizontal = 10.dp, vertical = 6.dp)
             ) {
-                Text("📋 Saved (${waypoints.size})", color = Color.White, fontSize = 11.sp, fontWeight = FontWeight.Bold)
+                Text("📋 Saved (${waypoints.size})", color = Color.White, fontSize = 10.sp, fontWeight = FontWeight.Bold)
             }
         }
 
